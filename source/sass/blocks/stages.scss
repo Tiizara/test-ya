@@ -1,0 +1,55 @@
+.stages {
+  margin: 0 20px;
+  padding: 116px 0 0;
+
+  &__title {
+    margin: 0;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 110%;
+  }
+
+  &__wrap {
+    padding: 182px 0 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/stages-img.png");
+      width: 335px;
+      height: 182px;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__list {
+    height: 300px;
+    list-style: none;
+    padding: 0 24px 0 70px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../img/back-welcome.png");
+  }
+
+  &__item {
+    margin: 0;
+    position: relative;
+  }
+
+  &__text {
+    color: rgb(49, 49, 49);
+    font-family: $font-golos;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__number {
+    position: absolute;
+    top: 0;
+    left: -24px;
+  }
+}

@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Test YA</title>
-  <!-- <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicon/apple.png">
   <link rel="manifest" href="manifest.webmanifest"> -->
@@ -14,73 +14,104 @@
 
 <body class="page-body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="index.html">
+    <a class="main-header__logo" href="index.html">
       <picture>
-        <img class="logo__image" src="./img/logo-mobile-cat.svg" alt="Клуб четерых коней">
+        <img src="./img/logo.png" alt="Клуб четерых коней">
       </picture>
     </a>
   </header>
   <main class="main-container">
     <section class="welcome">
       <h1 class="visually-hidden">Шахматный клуб четырех коней</h1>
-      <p class="welcome__slogan">Превратите уездный город в столицу земного шара</p>
+      <p class="welcome__slogan">
+        <span class="welcome__slogan--t-left">Превратите уездный город</span>
+        <br><span class="welcome__slogan--t-center">в столицу</span>
+        <br><span class="welcome__slogan--t-right">земного шара</span>
+      </p>
       <p class="welcome__text">Оплатите взнос на телеграммы для организации Международного васюкинского турнира
         по шахматам</p>
-      <a class="welcome__button" href="#">Поддержать шахматную мысль</a>
-      <a class="welcome__button--more" href="#">Подробнее о турнире</a>
-      <marquee class="marquee" behavior="scroll" direction="left">Дело помощи утопающим — дело рук самих утопающих!</marquee>
+      <div class="welcome__wrap">
+        <a class="welcome__button button-link" href="#">Поддержать шахматную мысль</a>
+        <a class="welcome__button--more button-link" href="#">Подробнее о турнире</a>
+      </div>
+      <marquee class="welcome__marquee" behavior="scroll" direction="left">Дело помощи утопающим — дело рук самих
+        утопающих!
+      </marquee>
     </section>
     <section class="info">
       <h2 class="visually-hidden">Информация о мероприятиях</h2>
-      <p class="info__text">Чтобы поддержать Международный васюкинский турнир</p>
-      <picture>
-        <source media="(min-width: 1200px)" srcset="./img/desktop/logo-header-cat-desktop.svg">
-        <img class="logo__image" src="./img/logo-mobile-cat.svg" alt="Клуб четерых коней">
-      </picture>
-      <p class="info__text">посетите лекцию на тему: «Плодотворная дебютная идея»</p>
-      <picture>
-        <source media="(min-width: 1200px)" srcset="./img/desktop/logo-header-cat-desktop.svg">
-        <img class="logo__image" src="./img/logo-mobile-cat.svg" alt="Клуб четерых коней">
-      </picture>
-      <p class="info__article article">и Сеанс одновременной игры в шахматы на 160 досках гроссмейстера О. Бендера</p>
+      <div class="info__wrap">
+        <p class="info__text">Чтобы поддержать Международный васюкинский турнир</p>
+        <span class="info__box">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/info/image-1.jpeg">
+            <img class="info__img" src="./img/info/image-1.jpeg" alt="Клуб четерых коней">
+          </picture>
+        </span>
+        <p class="info__text">посетите лекцию на тему:
+          <span class="info__text--highlight">«Плодотворная дебютная идея»</span>
+        </p>
+      </div>
+      <div class="info__wrap">
+        <span class="info__wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/info/image-2.jpeg">
+            <img class="info__img" src="./img/info/image-2.jpeg" alt="Клуб четерых коней">
+          </picture>
+        </span>
+        <p class="info__text">и Сеанс
+          <span class="info__text--highlight">одновременной игры в шахматы <br>на 160 досках</span>
+          гроссмейстера <br>О. Бендера
+        </p>
+      </div>
     </section>
     <section class="price">
-      <ul class="price__list">
-        <li class="price__item">
-          <p class="price_text">Место проведения: Клуб «Картонажник»</p>
-        </li>
-        <li class="price__item">
-          <p class="price_text">Дата и время мероприятия: 22 июня 1927 г. в 18:00</p>
-        </li>
-        <li class="price__item">
-          <p class="price_text">Плата за игру: 20 коп.</p>
-        </li>
-        <li class="price__item">
-          <p class="price_text">Стоимость входных билетов: 50 коп.</p>
-        </li>
-        <li class="price__item">
-          <p class="price_text">Взнос на телеграммы: 100 руб. 21 руб. 16 коп.</p>
-        </li>
-      </ul>
-      <p class="price__question">По всем вопросам обращаться в администрацию к К. Михельсону</p>
+      <dl class="price__holder">
+        <span class="price__wrap">
+          <dt class="price__name">Место проведения:</dt>
+          <dd class="price__sense">Клуб «Картонажник»</dd>
+        </span>
+        <span class="price__wrap">
+          <dt class="price__name">Дата и время мероприятия:</dt>
+          <dd class="price__sense">22 июня 1927 г. в 18:00</dd>
+        </span>
+        <span class="price__wrap">
+          <dt class="price__name price__name--width">Плата за игру:</dt>
+          <dd class="price__sense">20 коп.</dd>
+        </span>
+        <span class="price__wrap">
+          <dt class="price__name">Стоимость входных билетов:</dt>
+          <dd class="price__sense">50 коп.</dd>
+        </span>
+        <dt class="price__name">Взнос на телеграммы:</dt>
+        <dd class="price__sense">
+          <span class="price__sense--line-thr">100 руб.</span>
+          21 руб. 16 коп.
+        </dd>
+      </dl>
+      <a class="price__article article">По всем вопросам обращаться в администрацию к К. Михельсону</a>
     </section>
     <section class="stages">
       <h2 class="stages__title">Этапы преображения Васюков</h2>
       <p class="stages__article article">Будущие источники обогащения васюкинцев</p>
       <div class="stages__wrap">
-        <ul class="stages__list">
-          <li class="stage__item">
+        <ul class="stages__list slider">
+          <li class="stages__item">
             <p class="stages__text">Строительство железнодорожной магистрали Москва-Васюки</p>
             <span class="stages__number">1</span>
+          </li>
+          <li class="stages__item">
             <p class="stages__text">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</p>
             <span class="stages__number">2</span>
           </li>
-          <li class="stage__item">
+          <li class="stages__item">
             <p class="stages__text">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей,
               фруктов, икры, шоколадных конфет</p>
             <span class="stages__number">3</span>
           </li>
         </ul>
+        <button class="prev-button">left</button>
+        <button class="next-button">right</button>
       </div>
     </section>
     <section class="player">
@@ -101,10 +132,13 @@
     </section>
   </main>
   <footer class="main-footer">
-    <marquee class="marquee" behavior="scroll" direction="right">Шахматы двигают вперёд не только культуру, но и экономику!</marquee>
+    <marquee class="main-footer__marquee" behavior="scroll" direction="right">Шахматы двигают вперёд не только культуру,
+      но и
+      экономику!</marquee>
     <p>Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно
       познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

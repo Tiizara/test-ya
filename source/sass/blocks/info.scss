@@ -1,0 +1,32 @@
+.info {
+  margin: 54px 0 0;
+  &__wrap {
+    width: 335px;
+    margin: 0 20px;
+  }
+
+  &__text {
+    font-size: 28px;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 130%;
+
+    &--highlight {
+      color: rgb(245, 73, 50);
+    }
+  }
+
+  &__box {
+    display: block;
+    width: 335px;
+    height: 213px;
+    margin: 29px 0 30px;
+  }
+
+  &__wrapper {
+    display: block;
+    width: 375px;
+    height: 440px;
+    margin: 26px 0 0 -20px;
+  }
+}

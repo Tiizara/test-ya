@@ -1,0 +1,76 @@
+.welcome {
+  min-height: 720px;
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: "";
+    left: 0;
+    top: -87px;
+    width: 100%;
+    height: calc(100% + 88px);
+    position: absolute;
+    background: url("../img/back-welcome.png");
+    z-index: -2;
+  }
+
+  &::after {
+    background: url("../img/image-welcome.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+    margin: 0 auto;
+  }
+
+  &__slogan {
+    font-family: $font-merri;
+    font-size: 36px;
+    text-transform: uppercase;
+    width: 335px;
+    margin: 0 20px;
+    line-height: 115%;
+
+    &--t-center {
+      margin-left: 61px;
+    }
+
+    &--t-right {
+      margin-left: 29px;
+    }
+  }
+
+  &__text {
+    font-family: $font-golos;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    width: 335px;
+    margin: 22px 20px 0;
+  }
+
+  &__wrap {
+    margin: 0;
+    padding: 28px 0 0;
+  }
+
+  &__button {
+    margin: 0 20px 10px;
+
+    &--more {
+      margin: 0 20px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(31, 31, 31);
+    }
+  }
+
+  &__marquee {
+    position: absolute;
+    bottom: 0;
+    background: rgb(245, 73, 50);
+    color: rgb(255, 255, 255);
+    height: 38px;
+    box-sizing: border-box;
+    padding: 12px 0;
+    text-transform: uppercase;
+  }
+}

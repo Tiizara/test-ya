@@ -1,0 +1,43 @@
+.price {
+  &__holder {
+    margin: 48px 20px 0;
+  }
+
+  &__wrap {
+    border-bottom: solid 2px rgb(208, 208, 208);
+    display: block;
+    margin: 0 0 20px;
+  }
+
+  &__name {
+    color: rgb(49, 49, 49);
+    opacity: 0.7;
+    font-family: $font-golos;
+    margin: 0 0 12px;
+    font-size: 20px;
+    display: inline-block;
+    width: 335px;
+
+    &--width {
+      width: 152px;
+    }
+  }
+
+  &__sense {
+    margin: 0 0 10px;
+    color: rgb(49, 49, 49);
+    font-family: Golos Text;
+    font-size: 20px;
+    display: inline-block;
+
+    &--line-thr {
+      padding: 0 10px 0 0;
+      text-decoration: line-through;
+      text-decoration-color: rgb(245, 73, 50);
+    }
+  }
+
+  &__article {
+    margin: 30px 20px 0px;
+  }
+}
